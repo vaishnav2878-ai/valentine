@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customize Valentine Gift</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2>Customize Your Valentine 💝</h2>
+
+  <input id="name" placeholder="Recipient Name">
+  <input id="from" placeholder="Your Name (optional)">
+  <textarea id="message" placeholder="Custom message..."></textarea>
+
+  <label>Choose Emoji</label>
+  <select id="emoji">
+    <option value="🐼">🐼 Panda</option>
+    <option value="🐶">🐶 Dog</option>
+    <option value="🐱">🐱 Cat</option>
+    <option value="🦊">🦊 Fox</option>
+  </select>
+
+  <button onclick="generateLink()">Generate Share Link</button>
+  
+
+
+  <p id="linkBox"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

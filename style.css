@@ -1,0 +1,110 @@
+body{
+  background:#ffe6f0;
+  font-family: Arial;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  width:300px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 0 15px pink;
+}
+
+input, textarea, select{
+  width:100%;
+  margin:10px 0;
+  padding:8px;
+  border-radius:10px;
+  border:1px solid pink;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  background:#ff4d88;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.yes{
+  background:#ff4d88;
+}
+
+.no{
+  background:#ccc;
+}
+/* YES Button Bounce */
+.yes:hover{
+  transform: scale(1.1);
+}
+
+/* Quote */
+#quote{
+  margin:15px 0;
+  font-style: italic;
+  color:#ff4d88;
+}
+
+/* Result Text */
+#result{
+  font-size:22px;
+  color:#ff0066;
+  margin-top:15px;
+  animation:pulse 1s infinite;
+}
+
+/* Floating Hearts */
+.hearts::before{
+  content:"💖 💕 💗 💓 💞 💝";
+  position:fixed;
+  bottom:0;
+  width:100%;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  from{transform:translateY(0);}
+  to{transform:translateY(-600px);}
+}
+
+/* Confetti */
+.confetti{
+  position:fixed;
+  top:0;
+  width:10px;
+  height:10px;
+  animation:fall 3s linear;
+}
+
+@keyframes fall{
+  to{transform:translateY(100vh) rotate(360deg);}
+}
+
+/* Pulse animation */
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+textarea{
+  height:80px;
+}
+
+#reply{
+  margin-top:15px;
+  font-size:18px;
+  color:#ff4d88;
+}
+.no{
+  position: relative;
+}
+
+

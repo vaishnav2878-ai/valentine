@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tell Me Why 🥺</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Oh no 😭</h2>
+  <p>Please tell me why you clicked No 💔</p>
+
+  <textarea id="reason" placeholder="Type your reason here..."></textarea>
+
+  <button onclick="submitReason()">Submit</button>
+
+  <div id="reply"></div>
+</div>
+
+<script>
+    function submitReason(){
+  let text = document.getElementById("reason").value;
+
+  if(text === ""){
+    alert("Please type something 😅");
+    return;
+  }
+
+  localStorage.setItem("reason", text);
+
+  document.getElementById("reply").innerHTML =
+  "Thank you for telling me ❤️ Redirecting you back...";
+
+  setTimeout(()=>{
+    window.location.href = "valentine.html";
+  }, 2000);
+}
+
+</script>
+
+</body>
+</html>
